@@ -1948,7 +1948,7 @@ c["5% reduced maximum Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC
 c["50% chance for Flasks you use to not consume Charges"]={{[1]={flags=0,keywordFlags=0,name="FlaskChanceNotConsumeCharges",type="BASE",value=50}},nil}
 c["50% chance to Avoid Death from Hits"]={{}," to Avoid Death from Hits "}
 c["50% chance to Pierce an Enemy"]={{}," to Pierce an Enemy "}
-c["50% chance to gain Onslaught on Killing Blow with Axes"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=65540,keywordFlags=0,name="Condition:Onslaught",type="FLAG",value=true}}," ing Blow  "}
+c["50% chance to gain Onslaught on Killing Blow with Axes"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=65536,keywordFlags=0,name="Condition:Onslaught",type="FLAG",value=true}},nil}
 c["50% chance to inflict Bleeding on Hit"]={{[1]={flags=0,keywordFlags=0,name="BleedChance",type="BASE",value=50}},nil}
 c["50% faster start of Energy Shield Recharge"]={{[1]={flags=0,keywordFlags=0,name="EnergyShieldRechargeFaster",type="INC",value=50}},nil}
 c["50% increased Armour"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=50}},nil}
@@ -2889,7 +2889,7 @@ c["Link Skills have 8% increased Cast Speed"]={{[1]={[1]={skillType=118,type="Sk
 c["Lose 1% of Life on Kill"]={{[1]={[1]={percent=1,stat="Life",type="PercentStat"},flags=0,keywordFlags=0,name="LifeOnKill",type="BASE",value=-1}},nil}
 c["Lose 1% of Mana on Kill"]={{[1]={[1]={percent=1,stat="Mana",type="PercentStat"},flags=0,keywordFlags=0,name="ManaOnKill",type="BASE",value=-1}},nil}
 c["Lose 2% of Life on Kill"]={{[1]={[1]={percent=2,stat="Life",type="PercentStat"},flags=0,keywordFlags=0,name="LifeOnKill",type="BASE",value=-1}},nil}
-c["Lose 3% of Life and Energy Shield when you use a Chaos Skill"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=-3}},"  and Energy Shield when you use a Chaos Skill "}
+c["Lose 3% of Life and Energy Shield when you use a Chaos Skill"]={{[1]={[1]={percent=3,stat="Life",type="PercentStat"},[2]={type="Condition",var="UsedChaosSkillRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=-1},[2]={[1]={percent=3,stat="EnergyShield",type="PercentStat"},[2]={type="Condition",var="UsedChaosSkillRecently"},flags=0,keywordFlags=0,name="EnergyShield",type=-1,value="BASE"}},nil}
 c["Lose 5 Life when you use a Skill"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=-5}},"  when you use a Skill "}
 c["Lose 5 Life when you use a Skill 5 to 10 Physical Thorns damage"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=-5}},"  when you use a Skill 5 to 10 Physical Thorns damage "}
 c["Lose 5% of Energy Shield per second"]={{[1]={flags=0,keywordFlags=0,name="EnergyShieldDegenPercent",type="BASE",value=5}},nil}

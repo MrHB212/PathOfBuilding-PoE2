@@ -1671,10 +1671,14 @@ local modTagList = {
 	["if you[' ]h?a?ve dealt a non%-critical hit recently"] = { tag = { type = "Condition", var = "NonCritRecently" } },
 	["if your skills have dealt a critical hit recently"] = { tag = { type = "Condition", var = "SkillCritRecently" } },
 	["if you dealt a critical hit with a herald skill recently"] = { tag = { type = "Condition", var = "CritWithHeraldSkillRecently" } },
+
 	["if you[' ]h?a?ve dealt a critical hit with a two handed melee weapon recently"] = { flags = bor(ModFlag.Weapon2H, ModFlag.WeaponMelee), tag = { type = "Condition", var = "CritRecently" } },
+
 	["if you[' ]h?a?ve killed recently"] = { tag = { type = "Condition", var = "KilledRecently" } },
 	["on killing taunted enemies"] = { tag = { type = "Condition", var = "KilledTauntedEnemyRecently" } },
 	["on kill"] = { tag = { type = "Condition", var = "KilledRecently" } },
+	["on killing blow"] = { tag = { type = "Condition", var = "KilledRecently" } },
+	["on killing blow with axes"] = { flags = ModFlag.Axe, tag = { type = "Condition", var ="KilledRecently"}},
 	["on melee kill"] = { flags = ModFlag.WeaponMelee, tag = { type = "Condition", var = "KilledRecently" } },
 	["when you kill an enemy"] = { tag = { type = "Condition", var = "KilledRecently" } },
 	["if you[' ]h?a?ve killed an enemy recently"] = { tag = { type = "Condition", var = "KilledRecently" } },
@@ -1760,6 +1764,7 @@ local modTagList = {
 	["if you[' ]h?a?ve used a vaal skill recently"] = { tag = { type = "Condition", var = "UsedVaalSkillRecently" } },
 	["if you[' ]h?a?ve used a socketed vaal skill recently"] = { tag = { type = "Condition", var = "UsedVaalSkillRecently" } },
 	["when you use a vaal skill"] = { tag = { type = "Condition", var = "UsedVaalSkillRecently" } },
+	["when you use a chaos skill"] = { tag = { type = "Condition", var = "UsedChaosSkillRecently"}},
 	["if you haven't used a brand skill recently"] = { tag = { type = "Condition", var = "UsedBrandRecently", neg = true } },
 	["if you[' ]h?a?ve used a brand skill recently"] = { tag = { type = "Condition", var = "UsedBrandRecently" } },
 	["if you[' ]h?a?ve used a retaliation skill recently"] = { tag = { type = "Condition", var = "UsedRetaliationRecently" } },
@@ -4232,6 +4237,10 @@ local specialModList = {
 	["(%d+)%% chance to recover all life when you kill an enemy"] = function(chance) return {
 		mod("LifeOnKill", "BASE", 1, { type = "PercentStat", stat = "Life", percent = chance }, { type = "Condition", var = "AverageResourceGain" }),
 		mod("LifeOnKill", "BASE", 1, { type = "PercentStat", stat = "Life", percent = 100 }, { type = "Condition", var = "MaxResourceGain" })
+	} end,
+	["lose (%d+)%% of life and energy shield when you use a chaos skill"] = function(num) return {
+		mod("Life", "BASE", -1, {type = "PercentStat", stat = "Life", percent = num}, { type = "Condition", var = "UsedChaosSkillRecently" }),
+		mod("EnergyShield", -1, "BASE", {type = "PercentStat", stat = "EnergyShield", percent = num}, { type = "Condition", var = "UsedChaosSkillRecently" })
 	} end,
 	["lose (%d+)%% of life on kill"] = function(num) return { mod("LifeOnKill", "BASE", -1, { type = "PercentStat", stat = "Life", percent = num }) } end,
 	["%+(%d+) life gained on killing ignited enemies"] = function(num) return { mod("LifeOnKill", "BASE", num, { type = "ActorCondition", actor = "enemy", var = "Ignited" }) } end,

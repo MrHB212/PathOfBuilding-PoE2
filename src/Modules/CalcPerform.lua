@@ -200,6 +200,9 @@ local function doActorAttribsConditions(env, actor)
 			if actor.mainSkill.skillTypes[SkillType.Vaal] then
 				condList["UsedVaalSkillRecently"] = true
 			end
+			if actor.mainSkill.skillTypes[SkillType.Chaos] then
+				condList["UsedChaosSkillRecently"] = true
+			end
 			if actor.mainSkill.skillTypes[SkillType.Channel] then
 				condList["Channelling"] = true
 			end

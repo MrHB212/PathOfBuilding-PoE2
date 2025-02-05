@@ -2615,8 +2615,8 @@ c["Energy Shield starts at zero Cannot Recharge or Regenerate Energy Shield Lose
 c["Equipment and Skill Gems have 25% increased Attribute Requirements"]={{[1]={flags=0,keywordFlags=0,name="GlobalAttributeRequirements",type="INC",value=25}},nil}
 c["Equipment and Skill Gems have 4% reduced Attribute Requirements"]={{[1]={flags=0,keywordFlags=0,name="GlobalAttributeRequirements",type="INC",value=-4}},nil}
 c["Equipment and Skill Gems have 50% reduced Attribute Requirements"]={{[1]={flags=0,keywordFlags=0,name="GlobalAttributeRequirements",type="INC",value=-50}},nil}
-c["Every 12 seconds, gain 50% more Cast Speed for 4 seconds"]={{[1]={[1]={effectName="Quicksand Hourglass",effectType="Buff",type="GlobalEffect"},[2]={type="Condition",var="QuicksandHourglass"},flags=16,keywordFlags=0,name="Speed",type="MORE",value="50"},[2]={flags=0,keywordFlags=0,name="Condition:CanGainQuicksandHourglass",type="FLAG",value=true}},nil}
 c["Evasion Rating is increased by Overcapped Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="EvasionRatingIncreasedByOvercappedLightningRes",type="FLAG",value=true}},nil}
+c["Every 12 seconds, gain 50% more Cast Speed for 4 seconds"]={{[1]={[1]={effectName="Quicksand Hourglass",effectType="Buff",type="GlobalEffect"},[2]={type="Condition",var="QuicksandHourglass"},flags=16,keywordFlags=0,name="Speed",type="MORE",value="50"},[2]={flags=0,keywordFlags=0,name="Condition:CanGainQuicksandHourglass",type="FLAG",value=true}},nil}
 c["Every 3 seconds during Effect, deal 50% of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres"]={nil,"Every 3 seconds during Effect, deal 50% of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres "}
 c["Every 3 seconds during Effect, deal 50% of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres Recover all Mana when Used"]={nil,"Every 3 seconds during Effect, deal 50% of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres Recover all Mana when Used "}
 c["Every 3 seconds, Consume a nearby Corpse to Recover 20% of Life"]={nil,"Every 3 seconds, Consume a nearby Corpse to Recover 20% of Life "}
@@ -3221,7 +3221,7 @@ c["Unlimited number of Summoned Totems Totems reserve 100 Spirit each"]={nil,"Un
 c["Unwavering Stance"]={{[1]={flags=0,keywordFlags=0,name="Keystone",type="LIST",value="Unwavering Stance"}},nil}
 c["Unwithered enemies are Withered for 8 seconds when they enter your Presence"]={nil,"Unwithered enemies are Withered for 8 seconds when they enter your Presence "}
 c["Unwithered enemies are Withered for 8 seconds when they enter your Presence 20% increased Effect of Withered"]={nil,"Unwithered enemies are Withered for 8 seconds when they enter your Presence 20% increased Effect of Withered "}
-c["Warcries Empower an additional Attack"]={nil,"Warcries Empower an additional Attack "}
+c["Warcries Empower an additional Attack"]={{[1]={flags=0,keywordFlags=0,name="ExtraExertedAttacks",type="BASE",value=1}},nil}
 c["Warcry Skills have 25% increased Area of Effect"]={{[1]={[1]={skillType=73,type="SkillType"},flags=0,keywordFlags=0,name="AreaOfEffect",type="INC",value=25}},nil}
 c["Warcry Skills have 30% increased Area of Effect"]={{[1]={[1]={skillType=73,type="SkillType"},flags=0,keywordFlags=0,name="AreaOfEffect",type="INC",value=30}},nil}
 c["When a Party Member in your Presence Casts a Spell, you"]={nil,"When a Party Member in your Presence Casts a Spell, you "}

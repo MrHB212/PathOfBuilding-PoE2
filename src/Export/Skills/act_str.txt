@@ -1065,3 +1065,45 @@ statMap = {
 #flags 
 #mods
 #skillEnd
+
+#skill VolcanoPlayer
+#set VolcanoPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill EntanglePlayer
+#set EntanglePlayer
+#flags 
+#mods
+#skillEnd
+
+#skill ThunderstormPlayer
+#set ThunderstormPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SummonMetaTotemSpellTotemPlayer
+#set SummonMetaTotemSpellTotemPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SupportMetaTotemSpellTotemPlayer
+#set SupportMetaTotemSpellTotemPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill ThrashingVinesPlayer
+#set ThrashingVinesPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill TornadoPlayer
+#set TornadoPlayer
+#flags 
+#mods
+#skillEnd

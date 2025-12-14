@@ -1107,3 +1107,88 @@ statMap = {
 #flags 
 #mods
 #skillEnd
+
+#skill BriarpatchPlayer
+#set BriarpatchPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SavageFuryPlayer
+#set SavageFuryPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SavageFuryActivePlayer
+#set SavageFuryActivePlayer
+#flags 
+#mods
+#skillEnd
+
+#skill WolfPackPlayer
+#set WolfPackPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill BarkskinPlayer
+#set BarkskinPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill MetaFeralInvocationPlayer
+#set MetaFeralInvocationPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SupportFeralInvocationPlayer
+#set SupportFeralInvocationPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill BriarpatchPlayer
+#set BriarpatchPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SavageFuryPlayer
+#set SavageFuryPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill SavageFuryActivePlayer
+#set SavageFuryActivePlayer
+#flags 
+#mods
+#skillEnd
+
+#skill WolfPackPlayer
+#set WolfPackPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill BarkskinPlayer
+#set BarkskinPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill MetaFeralInvocationPlayer
+#set MetaFeralInvocationPlayer
+#flags 
+#mods
+#skillEnd
+
+#skill EternalRagePlayer
+#set EternalRagePlayer
+#flags 
+#mods
+#skillEnd
+

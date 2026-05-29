@@ -2102,6 +2102,7 @@ end
 -- Checks if a node has unlockConstraint and if that node is allocated
 function checkUnlockConstraints(build, node)
 	if unseenPathHover and node.unlockConstraint and node.unlockConstraint.nodes[1] == 5571 then
+		setSearchForceUpdate()
 		return true
 	end
 	if node.unlockConstraint then
